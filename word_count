@@ -1,0 +1,14 @@
+s1 = "Hello world bye world"
+s2 = "Hello Hadoop Goodbye Hadoop"
+
+input_text = s1 + " " + s2
+
+words = input_text.split()
+
+word_count = {}
+for word in words:
+    word_count[word] = word_count.get(word, 0) + 1
+
+print("Word Count Results:")
+for word, count in word_count.items():
+    print(f"{word}: {count}")
